@@ -1,0 +1,151 @@
+/* banner styles starts */
+.study {
+  padding: 20px 0 26px 0;
+  background-image: url("img/mainbg.png");
+  @include media($width-xs){
+    padding: 32px 0 36px 0;
+  }
+  @include media($width-mid){
+    padding: 80px 0;
+  }
+  @include media($width-max){
+    padding: 52px 0 55px 0;
+  }
+  .study-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: $mainred;
+    font-family: $echomed;
+    font-size: 25px;
+    margin-bottom: 24px;
+    @include media($width-xs){
+      font-size: 35.87px;
+      margin-bottom: 31px;
+    }
+    @include media($width-mid){
+        font-size: 74.98px;
+        margin-bottom: 57px;
+      }
+    @include media($width-max){
+      font-size: 39.58px;
+      margin-bottom: 53px;
+    }
+  }
+    .mySlides {
+      font-family: $museo;
+      font-size: 18.75px;
+      text-align: center;
+      cursor: pointer;
+      @include media($width-xs){
+        font-size: 26.9px;
+      }
+      @include media($width-mid){
+        font-size: 56.23px;
+      }
+      @include media($width-max){
+        font-size: 18.75px;
+      }
+      &:nth-child(3) {
+        @include media($width-max) {
+        }
+      }
+      .study-img {
+        display: inline-block;
+        width: 157px;
+        height: 157px;
+        background-size: 157px 157px;
+        margin-bottom: 14px;
+        background-repeat: no-repeat;
+        @include media($width-xs){
+          margin-bottom: 25px;
+          width: 225px;
+          height: 225px;
+          background-size: 225px 225px;
+        }
+        @include media($width-mid){
+            margin-bottom: 50px;
+            width: 471px;
+          height: 471px;
+          background-size: 471px 471px;
+          }
+        @include media($width-max){
+          margin-bottom: 18px;
+          width: 200px;
+          height: 200px;
+          background-size: 200px 200px;
+        }
+      }
+      .study-internet-icon{
+        background-image: url("img/studyinternet.png");
+      }
+      .study-main-icon{
+        background-image: url("img/studymain.png");
+      }
+      .study-polska-icon{
+        background-image: url("img/studypolska.png");
+      }
+    }
+  .mySlides:hover .study-internet-icon{
+    background-image: url("img/studyinternetred.png");
+  }
+  .mySlides:hover .study-polska-icon{
+    background-image: url("img/studypolskared.png");
+  }
+  .mySlides:hover .study-main-icon{
+    background-image: url("img/studymainred.png");
+  }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+    .study-item-title{
+      margin-bottom: 24px;
+      color: $mainred;
+      text-transform: uppercase;
+      font-family: $museo500;
+      @include media($width-xs){
+        margin-bottom: 32px;
+      }
+      @include media($width-mid){
+        margin-bottom: 65px;
+      }
+      @include media($width-max){
+        margin-bottom: 21px;
+      }
+    }
+    .study-item-text{
+      text-align: center;
+      display: inline-block;
+      color: #333333;
+     font-family: $museo300;
+      width: 228px;
+      @include media($width-xs){
+        width: 320px;
+      }
+      @include media($width-mid){
+        width: 670px;
+      }
+      @include media($width-max){
+        width: 223px;
+      }
+    }
+  }
+/* banner styles ends */

@@ -1,0 +1,63 @@
+.rates-banner{
+  background-image: url("img/bannerrates.jpg");
+  background-size: cover;
+  padding: 51px 0 60px 0;
+  border-width: 5px;
+  @include media($width-xs){
+    padding: 27px 0 36px 0;
+    border-width: 4px;
+  }
+  @include media($width-mid){
+    padding: 57px 0 73px 0;
+    border-width: 8px;
+  }
+  @include media($width-max){
+    padding: 156px 0 205px 0;
+    border-width: 3px;
+  }
+  .container{
+    @include media((max-width: 459px)){
+      padding: 0 16px;
+    }
+
+  }
+  .banner-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 36px;
+    @include media($width-xs) {
+      font-size: 29.59px;
+      margin-bottom: 22px;
+    }
+    @include media($width-mid) {
+      font-size: 60.5px;
+      margin-bottom: 38px;
+    }
+    @include media($width-max) {
+      font-size: 53.93px;
+      margin-bottom: 68px;
+    }
+  }
+  .banner-text {
+    font-family: $museo500;
+    width: 100%;
+    font-size: 17.67px;
+    line-height: 32px;
+    margin-bottom: 0;
+    @include media($width-xs){
+      width: 92%;
+      font-size: 24.45px;
+      line-height: 39px;
+    }
+    @include media($width-mid){
+      width: 90%;
+      font-size: 50px;
+      line-height: 79.5px;
+    }
+    @include media($width-max) {
+      width: 756px;
+      font-size: 20px;
+      line-height: 43px;
+    }
+  }
+}

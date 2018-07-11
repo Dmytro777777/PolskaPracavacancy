@@ -1,0 +1,133 @@
+.navmenu{
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 16px;
+  background-image: url("img/menuicon.png");
+  background-position: center;
+  background-size: 19px 16px;
+  margin-right: 4px;
+  position: relative;
+  font-size: 16.67px;
+  @include media($width-xs){
+    margin-right: 6px;
+    width: 28px;
+    height: 23px;
+    background-size: 28px 23px;
+    font-size: 23.91px;
+  }
+  @include media($width-mid){
+    margin-right: 14px;
+    width: 31px;
+    height: 26px;
+    background-size: 31px 26px;
+    font-size: 23.87px;
+  }
+  @include media($width-max){
+    position: absolute;
+    font-family: $echo;
+    font-size: 14.58px;
+    background-image: none;
+    width: 578px;
+    height: auto;
+    right: 170px;
+    top: 26px;
+    margin-right: 0;
+  }
+}
+.navmenu-dropdown-wrap{
+  display: none;
+  position: absolute;
+  padding-top: 32px;
+  left: -5px;
+  background-color: transparent;
+  @include media($width-xs){
+    padding-top: 44px;
+    left: -8px;
+  }
+  @include media($width-mid){
+    padding-top: 46px;
+    left: -11px;
+  }
+  @include media($width-max){
+    padding-top: 0;
+    left: -11px;
+    display: block;
+    position: static;
+  }
+}
+.navmenu-dropdown{
+  width: 230px;
+  color: #000000;
+  padding: 15px 0 19px 23px;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  @include media($width-xs){
+    padding: 26px 0 29px 33px;
+    width: 329px;
+  }
+  @include media($width-mid){
+    padding: 26px 0 50px 47px;
+    width: 391px;
+  }
+    @include media($width-max){
+      background-color: transparent;
+      width: auto;
+      padding: 0;
+      display: inline-block;
+    }
+  a{
+    display: inline-block;
+    position: relative;
+  }
+  .navmenu-item a:hover {
+    color: $mainred;
+  }
+  .navmenu-item a:hover .menu-item-line {
+    @include media($width-max){
+      position: absolute;
+      display: block;
+      background-color: $mainred;
+      width: 100%;
+    }
+  }
+}
+.navmenu:hover{
+  width: 0;
+  margin-right: 0;
+  @include media($width-max){
+    width: 578px;
+
+  }
+}
+.navmenu:hover .navmenu-dropdown-wrap {
+  display: block;
+}
+.navmenu-item{
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 31px;
+  @include media($width-xs){
+    margin-bottom: 45px;
+  }
+  @include media($width-max){
+    display: inline-block;
+    color: $mainwhite;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  &:last-child{
+    margin-bottom: 0;
+    @include media($width-max){
+      margin-right: 0;
+    }
+  }
+//  .menu-item-line{
+//  background-color: red;
+//  position: absolute;
+//  display: none;
+//}
+
+}

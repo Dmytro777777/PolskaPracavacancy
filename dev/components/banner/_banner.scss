@@ -1,0 +1,103 @@
+.banner {
+  width: 100%;
+  background-image: url("img/banner1700.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0 35px 0;
+  box-sizing: border-box;
+  border-bottom: 4px solid $mainred;
+  font-size: 16.67px;
+  text-align: center;
+  @include media($width-xs) {
+    font-size: 23.91px;
+    padding: 62px 0 50px 0;
+    border-bottom-width: 6px;
+  }
+  @include media($width-mid) {
+    font-size: 49.99px;
+    padding: 81px 0 88px 0;
+    border-bottom-width: 12px;
+  }
+  @include media($width-max) {
+    font-size: 25px;
+    padding: 153px 0 185px 0;
+    border-bottom-width: 1px;
+  }
+}
+.banner-content > * {
+  text-align: center;
+  margin-bottom: 28px;
+  @include media($width-xs) {
+    margin-bottom: 36px;
+  }
+  @include media($width-mid) {
+    margin-bottom: 95px;
+  }
+  @include media($width-max) {
+    margin-bottom: 48px;
+  }
+}
+
+.banner-title {
+  text-transform: uppercase;
+  font-size: 20.83px;
+  @include media($width-xs) {
+    font-size: 29.17px;
+  }
+  @include media($width-mid) {
+    font-size: 60.48px;
+  }
+  @include media($width-max) {
+    font-size: 50px;
+  }
+}
+.banner-text {
+  display: inline-block;
+  font-family: $museo300;
+  margin-bottom: 34px;
+  width: 242px;
+  @include media($width-xs) {
+    margin-bottom: 50px;
+    width: 351px;
+  }
+  @include media($width-mid) {
+    margin-bottom: 80px;
+    width: 732px;
+  }
+  @include media($width-max) {
+    margin-bottom: 68px;
+    width: 376px;
+  }
+}
+
+.red-button {
+  cursor: pointer;
+  width: 119px;
+  height: 36px;
+  font-family: $echo;
+  display: block;
+  margin: 0 auto;
+  background-color: $mainred;
+  border: none;
+  outline: none;
+  color: $mainwhite;
+  border-radius: 9px;
+  font-size: 16.67px;
+  text-transform: uppercase;
+  @include media($width-xs) {
+    width: 168px;
+    height: 51px;
+  font-family: $echobold;
+    font-size: 23.91px;
+  }
+  @include media($width-mid) {
+    width: 350px;
+    height: 105px;
+    font-size: 49.99px;
+  }
+  @include media($width-max) {
+    width: 174px;
+    height: 57px;
+    font-size: 24.12px;
+  }
+}

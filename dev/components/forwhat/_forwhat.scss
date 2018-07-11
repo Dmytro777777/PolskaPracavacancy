@@ -1,0 +1,96 @@
+.forwhat{
+  text-align: center;
+  font-family: $museo300;
+  font-size: 14.58px;
+  background-image: url("img/deskbg1700.jpg");
+  background-position: center;
+  padding: 14px 0 20px 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  @include media($width-xs){
+    padding: 20px 0;
+    font-size: 20.92px;
+  }
+  @include media($width-mid){
+    padding: 69px 0 64px 0;
+    font-size: 41.67px;
+  }
+  @include media($width-max) {
+    padding: 91px 0 94px 0;
+    font-size: 31.25px;
+  }
+  @include media($width-max-max) {
+    background-image: url("img/deskbg1336.jpg");
+  }
+  @include media($width-max-xs) {
+    background-image: url("img/deskbg460.jpg");
+  }
+  @include media($width-max-xxs) {
+    background-image: url("img/deskbg320.jpg");
+  }
+  &-title{
+    text-transform: uppercase;
+    font-family: $echobold;
+    font-size: 33.33px;
+    margin-bottom: 16px;
+    @include media($width-xs){
+      font-size: 47.82px;
+      margin-bottom: 20px;
+    }
+    @include media($width-mid){
+      font-size: 66.67px;
+      margin-bottom: 62px;
+    }
+    @include media($width-max){
+      font-size: 50px;
+    }
+  }
+  .forwhat-text-box{
+    @include media($width-max){
+      column-count: 2;
+      padding-left: 0;
+    }
+  }
+.forwhat-disk{
+  display: none;
+  background-color: $mainwhite;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  margin-right: 14px;
+  position: relative;
+  vertical-align: top;
+  top: 17px;
+  @include media($width-max) {
+    display: inline-block;
+  }
+}
+  .forwhat-text{
+    width: 232px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    @include media($width-xs){
+      margin-bottom: 37px;
+      width: 332px;
+    }
+    @include media($width-mid){
+      margin-bottom: 69px;
+      width: 670px;
+    }
+    @include media($width-max){
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 22px;
+      width: 100%;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    span{
+      display: inline-block;
+      @include media($width-max) {
+       width: 92%;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  @include media($width-max){
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mySlides {
+    display: none;
+    @include media($width-max){
+      display: inline-block;
+    }
+  }
+  .prev, .next {
+    font-family: $museo500;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 14px;
+    top: 114px;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    color: #8a8989;
+    font-size: 17px;
+    background-color: #e8e8e8;
+    @include media($width-xs){
+      width: 64px;
+      height: 64px;
+      top: 162px;
+      font-size: 27px;
+      padding-top: 19px;
+    }
+    @include media($width-mid){
+      width: 133px;
+      height: 133px;
+      top: 342px;
+      font-size: 50px;
+      padding-top: 40px;
+    }
+    @include media($width-max){
+      display: none;
+    }
+  }
+  .next {
+    right: 0;
+  }
+  .prev {
+    left: 0;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.footer{
+  font-size: 16.67px;
+  background-image: url("img/footerbg.jpg");
+  //background-color: #424242;
+  background-repeat: repeat;
+  font-family: $echo;
+  padding: 24px 0;
+  text-align: center;
+  a{
+    cursor: pointer;
+  }
+  @include media($width-xs) {
+    padding: 33px 0;
+    font-size: 23.91px;
+  }
+  @include media($width-mid) {
+    padding: 31px 0 48px 0;
+    font-size: 25px;
+  }
+  @include media($width-max) {
+    padding: 47px 0 47px 0;
+    font-size: 14.79px;
+  }
+  .container{
+    display: block;
+    @include media($width-max) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .navmenu-item a:hover .menu-item-line {
+      @include media($width-max){
+        top: 20px;
+        height: 3px;
+      }
+    }
+
+  }
+.contacts{
+  @include media($width-max) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.social-icons{
+  margin-bottom: 20px;
+  @include media($width-xs) {
+    margin-bottom: 28px;
+  }
+    @include media($width-mid) {
+      margin-bottom: 18px;
+    }
+  @include media($width-max) {
+    margin-bottom: 3px;
+  }
+}
+.facebook-icon{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("img/facebook.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  @include media($width-xs) {
+    width: 47px;
+    height: 47px;
+    background-size: 47px 47px;
+  }
+  @include media($width-mid) {
+    width: 57px;
+    height: 57px;
+    background-size: 57px 57px;
+  }
+  @include media($width-max) {
+    margin-right: 0px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+  }
+  &:hover{
+    background-image: url("img/facebookred.png");
+  }
+}
+.instagram-icon{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("img/inst.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  @include media($width-xs) {
+    width: 47px;
+    height: 47px;
+    background-size: 47px 47px;
+  }
+  @include media($width-mid) {
+    width: 57px;
+    height: 57px;
+    background-size: 57px 57px;
+  }
+  @include media($width-max) {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
+  &:hover{
+    background-image: url("img/instred.png");
+  }
+}
+.footer-text{
+  margin-bottom: 21px;
+  @include media($width-xs) {
+    margin-bottom: 30px;
+  }
+    @include media($width-mid) {
+      margin-bottom: 28px;
+    }
+  @include media($width-max) {
+    margin-bottom: 7px;
+  }
+}
+.licenses{
+  display: inline-block;
+  width: 274px;
+  @include media($width-xs) {
+    width: 393px;
+  }
+  @include media($width-mid) {
+    width: 415px;
+  }
+  @include media($width-max) {
+    vertical-align: top;
+    font-family: $echolight;
+    text-align: center;
+    width: 232px;
+  }
+}
+  .licenses .footer-text:hover{
+    color: $mainred;
+  }
+  .contacts > .footer-text{
+    @include media($width-max) {
+      font-family: $echobold;
+    }
+  }
+.licenses > .footer-text:last-child{
+    margin-bottom: 0;
+  width: 80%;
+  }
+  .navmenu-dropdown-wrap{
+    display: none;
+    width: 366px;
+    overflow: hidden;
+    @include media($width-max){
+      display: inline-block;
+    }
+  }
+  .navmenu-dropdown{
+    column-count: 2;
+    width: 566px;
+    text-align: left;
+    font-size: 0;
+  }
+  .navmenu-item{
+    font-family: $echobold;
+    font-size: 18.75px;
+    margin-bottom: 10px;
+    width: 100%;
+      margin-right: 0px;
+    @include media($width-max){
+      text-transform: none;
+    }
+    &:last-child{
+      @include media($width-max){
+        margin-bottom: 0;
+      }
+    }
+  }
+}

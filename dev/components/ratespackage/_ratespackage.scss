@@ -1,0 +1,162 @@
+.rates-package {
+  padding: 20px 0 26px 0;
+  @include media($width-xs){
+    padding: 10px 0 19px 0;
+  }
+  @include media($width-mid){
+    padding: 24px 0 41px 0;
+  }
+  @include media($width-max){
+    padding: 24px 0 44px 0;
+  }
+  .study-title{
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 17px;
+    color: #000000;
+    @include media($width-xs){
+      font-size: 20.38px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+    @include media($width-mid){
+      font-size: 41.67px;
+      line-height: 73px;
+      margin-bottom: 24px;
+    }
+    @include media($width-max){
+      font-size: 29.41px;
+      margin-bottom: 21px;
+    }
+  }
+  .mySlides{
+    .study-img{
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 34px;
+      @include media($width-xs){
+        width: 230px;
+        height: 230px;
+        background-size: 230px 230px;
+        margin-bottom: 36px;
+      }
+      @include media($width-mid){
+        margin-bottom: 80px;
+        width: 470px;
+        height: 470px;
+        background-size: 470px 470px;
+      }
+      @include media($width-max){
+        width: 200px;
+        height: 200px;
+        background-size: 200px 200px;
+        margin-bottom: 33px;
+      }
+    }
+  }
+  .rates-econom-icon {
+    background-image: url("img/rateseconomicon.png");
+  }
+  .rates-standart-icon {
+    background-image: url("img/ratesstandarticon.png");
+  }
+  .rates-express-icon {
+    background-image: url("img/ratesexpressicon.png");
+  }
+  .rates-biometric-icon {
+    background-image: url("img/ratesbiometricicon.png");
+  }
+  .mySlides:hover .rates-econom-icon {
+    background-image: url("img/rateseconomiconred.png");
+  }
+  .mySlides:hover .rates-standart-icon {
+    background-image: url("img/ratesstandarticonred.png");
+  }
+  .mySlides:hover .rates-express-icon {
+    background-image: url("img/ratesexpressiconred.png");
+  }
+  .mySlides:hover .rates-biometric-icon {
+    background-image: url("img/ratesbiometriciconred.png");
+  }
+  .slideshow-container .prev, .slideshow-container .next{
+    font-family: $proxexbold;
+    font-size: 17px;
+    top: 190px;
+    @include media($width-xs){
+      top: 207px;
+      font-size: 26px;
+    }
+    @include media($width-mid){
+      top: 430px;
+      font-size: 50.97px;
+    }
+  }
+  .study-item-title{
+    font-family: $echobold;
+    font-size: 29.17px;
+    color: #2a2a2a;
+    margin-bottom: 24px;
+    @include media($width-xs){
+      font-size: 33.53px;
+      margin-bottom: 30px;
+    }
+    @include media($width-mid){
+      font-size: 68.67px;
+      margin-bottom: 55px;
+    }
+    @include media($width-max){
+      font-size: 29.17px;
+      margin-bottom: 30px;
+    }
+  }
+  .study-item-text{
+    font-family: $museo100;
+    font-size: 18.75px;
+    color: #333333;
+    width: 95%;
+    line-height: 23px;
+    margin-bottom: 29px;
+    @include media($width-xs){
+      font-size: 21.56px;
+      line-height: 26px;
+      margin-bottom: 34px;
+      width: 75%;
+    }
+    @include media($width-mid){
+      font-size: 44.08px;
+      line-height: 55px;
+      margin-bottom: 67px;
+      width: 73%;
+    }
+    @include media($width-max){
+      font-size: 18.75px;
+      margin-bottom: 30px;
+      line-height: 20px;
+      width: 95%;
+    }
+
+  }
+  .red-button{
+    width: 120px;
+    height: 40px;
+    font-size: 16.67px;
+    @include media($width-xs){
+      width: 136px;
+      height: 44px;
+      font-size: 19.16px;
+    }
+    @include media($width-mid){
+      width: 280px;
+      height: 90px;
+      font-size: 39.18px;
+    }
+    @include media($width-max){
+      width: 120px;
+      height: 38px;
+      font-size: 16.67px;
+    }
+  }
+}

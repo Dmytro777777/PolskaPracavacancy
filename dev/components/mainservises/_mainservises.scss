@@ -1,0 +1,95 @@
+.main-servises {
+  padding: 14px 0 29px 0;
+  @include media($width-xs){
+    padding: 27px 0 48px 0;
+  }
+  @include media($width-mid){
+    padding: 60px 0 72px 0;
+  }
+  @include media($width-max){
+    padding: 16px 0 47px 0;
+  }
+  .study-title{
+    font-size: 24.8px;
+    line-height: 31px;
+    margin-bottom: 14px;
+    @include media($width-xs){
+      font-size: 35.68px;
+      line-height: 44px;
+      margin-bottom: 20px;
+    }
+    @include media($width-mid){
+      font-size: 74.68px;
+      line-height: 90px;
+      margin-bottom: 50px;
+    }
+    @include media($width-max){
+      font-size: 34.42px;
+      margin-bottom: 13px;
+    }
+  }
+  .mySlides{
+    .study-img{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 8px;
+      @include media($width-xs){
+        margin-bottom: 12px;
+      }
+      @include media($width-mid){
+        margin-bottom: 31px;
+      }
+      @include media($width-max){
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .main-cvs-icon {
+    background-image: url("img/cvsicon.png");
+  }
+  .main-assist-icon {
+    background-image: url("img/assisticon.png");
+  }
+  .main-courses-icon {
+    background-image: url("img/coursesicon.png");
+  }
+  .mySlides:hover .main-cvs-icon{
+    background-image: url("img/cvsiconred.png");
+  }
+  .mySlides:hover .main-assist-icon{
+    background-image: url("img/assisticonred.png");
+  }
+  .mySlides:hover .main-courses-icon{
+    background-image: url("img/coursesiconred.png");
+  }
+  .study-item-text{
+    margin-bottom: 29px;
+    @include media($width-xs){
+        margin-bottom: 41px;
+      }
+    @include media($width-max){
+      margin-bottom: 33px;
+    }
+
+  }
+  .red-button{
+    width: 144px;
+    height: 35px;
+    font-size: 16.67px;
+    @include media($width-xs){
+      width: 207px;
+      height: 50px;
+      font-size: 23.92px;
+    }
+    @include media($width-mid){
+      width: 430px;
+      height: 105px;
+      font-size: 49.99px;
+    }
+    @include media($width-max){
+      width: 136px;
+      height: 35px;
+      font-size: 15.83px;
+    }
+  }
+}

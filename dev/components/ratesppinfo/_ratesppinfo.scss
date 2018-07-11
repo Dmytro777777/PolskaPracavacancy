@@ -1,0 +1,49 @@
+.rates-ppinfo{
+  background-image: url("img/pprates1700.jpg");
+  background-size: cover;
+  padding: 37px 0 37px 0;
+  @include media($width-xs){
+    padding: 24px 0 18px 0;
+  }
+  @include media($width-mid){
+    padding: 51px 0 39px 0;
+  }
+  @include media($width-max){
+    padding: 37px 0 31px 0;
+  }
+.forwhat-title{
+  color: $mainred;
+  margin-bottom: 25px;
+  @include media($width-xs){
+    margin-bottom: 16px;
+  }
+  @include media((max-width: 939px)){
+    font-size: 32.6px;
+  }
+  @include media($width-mid){
+    margin-bottom: 34px;
+  }
+  @include media($width-max){
+    font-size: 41.67px;
+    margin-bottom: 31px;
+  }
+}
+.forwhat-text{
+  line-height: 27.5px;
+  width: 100%;
+  @include media((max-width: 459px)){
+    margin-bottom: 25px;
+  }
+  @include media($width-xs){
+    line-height: 37px;
+  }
+  @include media($width-mid){
+    line-height: 76px;
+  }
+  @include media($width-max){
+    line-height: 28px;
+    text-align: center;
+    font-size: 18.75px;
+  }
+}
+}

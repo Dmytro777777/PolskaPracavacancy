@@ -1,0 +1,113 @@
+.courses {
+  padding: 24px 0 28px 0;
+  background-image: url("img/mainbg.png");
+  font-family: $museo500;
+  font-size: 25px;
+  color: $mainblack;
+  text-align: center;
+  @include media($width-xs) {
+    padding: 34px 0 46px 0;
+    font-size: 35.87px;
+  }
+  @include media($width-mid) {
+    padding: 60px 0 71px 0;
+    font-size: 58.33px;
+  }
+  @include media($width-max) {
+    padding: 46px 0 53px 0;
+    font-size: 25px;
+  }
+  .red-button {
+    @include media($width-max) {
+      width: 121px;
+      height: 37px;
+      font-size: 16.67px;
+    }
+  }
+  .mySlides {
+    text-align: center;
+    @include media($width-max) {
+      margin-right: 81px;
+    }
+    &:nth-child(3) {
+      @include media($width-max) {
+        margin-right: 0;
+      }
+    }
+}
+  .courses-item-title {
+    text-transform: uppercase;
+    font-family: $museo700;
+    color: $mainred;
+    margin-bottom: 14px;
+    font-size: 33.33px;
+    @include media($width-xs) {
+      font-size: 47.82px;
+      margin-bottom: 19px;
+    }
+    @include media($width-mid) {
+      font-size: 66.67px;
+      margin-bottom: 33px;
+    }
+    @include media($width-max) {
+      font-size: 41.67px;
+      margin-bottom: 44px;
+    }
+  }
+  .courses-item-text {
+    display: inline-block;
+    text-align: center;
+    font-family: $museo100;
+    font-size: 20.83px;
+    margin-bottom: 27px;
+    width: 253px;
+    @include media($width-xs) {
+      width: 362px;
+        font-size: 29.89px;
+        margin-bottom: 40px;
+      }
+    @include media($width-mid) {
+      width: 604px;
+      font-size: 50px;
+      margin-bottom: 62px;
+    }
+    @include media($width-max) {
+      width: 300px;
+      font-size: 22.92px;
+      margin-bottom: 55px;
+    }
+  }
+  .courses-terms-item {
+    margin-bottom: 17px;
+    @include media($width-xs) {
+      margin-bottom: 25px;
+    }
+    @include media($width-mid) {
+      margin-bottom: 67px;
+    }
+    @include media($width-max) {
+      margin-bottom: 36px;
+    }
+    &:last-child{
+      margin-bottom: 28px;
+      @include media($width-xs) {
+        margin-bottom: 35px;
+      }
+      @include media($width-mid) {
+        margin-bottom: 64px;
+      }
+      @include media($width-max) {
+        margin-bottom: 54px;
+      }
+    }
+  }
+  .prev, .next{
+    top: 146px;
+    @include media($width-xs) {
+        top: 208px;
+      }
+    @include media($width-mid) {
+      top: 446px;
+    }
+  }
+}
