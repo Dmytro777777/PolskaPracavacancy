@@ -1,0 +1,321 @@
+.vacancies-search {
+  font-family: $museo300, sans-serif;
+  color: $mainblack;
+  background-color: #c4c4c4;
+  input, select {
+    outline: none;
+    border: none;
+    padding: 0;
+  }
+  .vacancies-main-search {
+    font-size: 0;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
+    padding: 9px 16px 12px 16px;
+    @include media($width-xs){
+ padding: 10px 15px;
+    }
+    @include media($width-mid){
+ padding: 10px 15px;
+    }
+    @include media($width-max){
+ padding: 10px 15px;
+    }
+    .main-words {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+ .custom-select{
+  display: inline-block;
+  width: 49%;
+   margin-bottom: 11px;
+   @include media($width-xs){
+     margin-bottom: 15px;
+   }
+   @include media($width-mid){
+      margin-bottom: 15px;
+   }
+   @include media($width-max){
+     margin-bottom: 15px;
+   }
+}
+    .custom-select:nth-child(2){
+      margin-right: 2%;
+    }
+  }
+  input.search-form-item {
+    padding-left: 10px;
+    @include media($width-xs){
+padding-left: 10px;
+    }
+    @include media($width-mid){
+padding-left: 10px;
+    }
+    @include media($width-max){
+padding-left: 10px;
+    }
+  }
+  .search-form-item {
+    background-color: $mainwhite;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #b4b4b4;
+    font-size: 12.29px;
+    height: 35px;
+    @include media($width-xs){
+      padding-left: 7px;
+      font-size: 12.29px;
+      height: 35px;
+    }
+    @include media($width-mid){
+      padding-left: 7px;
+      font-size: 12.29px;
+      height: 35px;
+    }
+    @include media($width-max){
+      padding-left: 7px;
+      font-size: 12.29px;
+      height: 35px;
+    }
+    &::-webkit-input-placeholder {
+      color: #b4b4b4;
+      font-size: 12.29px;
+      font-family: $museo300;
+      @include media($width-xs) {
+        font-size: 17.95px;
+      }
+      @include media($width-mid) {
+        font-size: 38.28px;
+      }
+      @include media($width-max) {
+        font-size: 11.49px;
+      }
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #b4b4b4;
+      font-size: 12.29px;
+      font-family: $museo300;
+      @include media($width-xs) {
+        font-size: 17.95px;
+      }
+      @include media($width-mid) {
+        font-size: 38.28px;
+      }
+      @include media($width-max) {
+        font-size: 11.49px;
+      }
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #b4b4b4;
+      font-size: 12.29px;
+      font-family: $museo300;
+      @include media($width-xs) {
+        font-size: 17.95px;
+      }
+      @include media($width-mid) {
+        font-size: 38.28px;
+      }
+      @include media($width-max) {
+        font-size: 11.49px;
+      }
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #b4b4b4;
+      font-size: 12.29px;
+      font-family: $museo300;
+      @include media($width-xs) {
+        font-size: 17.95px;
+      }
+      @include media($width-mid) {
+        font-size: 38.28px;
+      }
+      @include media($width-max) {
+        font-size: 11.49px;
+      }
+    }
+  }
+  #field-activity {
+    width: 49%;
+    margin: 15px 2% 15px 0;
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+  }
+  #city {
+    width: 49%;
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+  }
+  .advanced-search-title {
+    padding-bottom: 3px;
+    display: inline-block;
+    font-size: 15.36px;
+    border-bottom: 2px dotted $mainblack;
+    margin-right: 31px;
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+  }
+  .red-button {
+    display: inline-block;
+    font-size: 15.36px;
+    width: 97px;
+    height: 26px;
+    background-color: #ff0000;
+    padding: 0 0 0 6px;
+    border-radius: 5px;
+    & > *{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .search-btn-icon{
+      background-image: url("img/searchbtnicon.svg");
+      margin-left: 10px;
+      background-size: cover;
+      width: 19px;
+      height: 19px;
+    }
+  }
+  .search-criteria {
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid #b6b6b6;
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+  }
+  .search-criteria-item {
+    font-size: 11.95px;
+    display: block;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 12px;
+      width: 12px;
+      background-color: $mainwhite;
+      border-radius: 3px;
+      @include media($width-xs){
+
+      }
+      @include media($width-mid){
+
+      }
+      @include media($width-max){
+
+      }
+      &:after {
+        content: "✔";
+        position: absolute;
+        display: none;
+        left: 2px;
+        top: 1px;
+        width: 3px;
+        height: 6px;
+        @include media($width-xs){
+
+        }
+        @include media($width-mid){
+
+        }
+        @include media($width-max){
+
+        }
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      width: 12px;
+      height: 12px;
+      top: 0;
+      margin: 0;
+      @include media($width-xs){
+
+      }
+      @include media($width-mid){
+
+      }
+      @include media($width-max){
+
+      }
+    }
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+  .work-for {
+    font-size: 0;
+    padding: 15px 15px 20px 15px;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
+    @include media($width-xs){
+
+    }
+    @include media($width-mid){
+
+    }
+    @include media($width-max){
+
+    }
+    input.search-form-item {
+      width: 49%;
+      display: inline-block;
+    }
+    .work-for-title{
+      font-size: 12.29px;
+      padding-left: 5px;
+      margin-top: 4px;
+    }
+    .custom-select:nth-child(3){
+      width: 49%;
+      margin-right: 2%;
+      display: inline-block;
+    }
+  }
+
+}

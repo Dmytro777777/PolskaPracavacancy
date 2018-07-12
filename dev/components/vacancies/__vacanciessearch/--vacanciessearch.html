@@ -1,0 +1,58 @@
+<form action="#" id="vacancies-search" class="vacancies-search">
+    <div class="vacancies-main-search">
+        <input type="text" class="main-words search-form-item" placeholder="Ключові слова">
+        <div class="custom-select search-form-item">
+        <select name="field-activity" id="field-activity" form="vacancies-search">
+            <option value="sfera">Сфера діяльності</option>
+            <option value="buhgalter">Бухгалтер</option>
+            <option value="programist">Программист</option>
+            <option value="jurist">Юрист</option>
+            <option value="hr">HR</option>
+        </select>
+        </div>
+        <div class="custom-select search-form-item">
+        <select class="search-form-item" name="city" id="city" form="vacancies-search">
+            <option value="misto">Місто</option>
+            <option value="kiev">Киев</option>
+            <option value="kharkov">Харьков</option>
+            <option value="lvov">Львов</option>
+            <option value="nikolaev">Николаев</option>
+        </select>
+        </div>
+        <div class="advanced-search-title">Розширений пошук</div>
+        <button class="red-button"><span>Пошук</span><span class = "search-btn-icon"></span></button>
+    </div>
+    <div class="search-criteria">
+        <label class="search-criteria-item" for="at-title">Тільки в заголовку<input type="checkbox" id='at-title'><span
+                class="checkmark"></span></label>
+        <label class="search-criteria-item" for="including-synonyms">Включаючи синоніми<input type="checkbox"
+                                                                                              checked="checked"
+                                                                                              id='including-synonyms'><span
+                class="checkmark"></span></label>
+        <label class="search-criteria-item" for="any-word">Шукати будь-яке з слів<input type="checkbox"
+                                                                                        id='any-word'><span
+                class="checkmark"></span></label>
+        <label class="search-criteria-item" for="students">Студентам<input type="checkbox" id='students'><span
+                class="checkmark"></span></label>
+    </div>
+    <div class="work-for">
+        <div class="custom-select search-form-item">
+            <select form="vacancies-search" name="specialty" id="specialty">
+                <option value="specialty">Спеціальність</option>
+                <option value="bakalvr">бакалавр</option>
+                <option value="specialist">специалист</option>
+                <option value="magistr">магистр</option>
+            </select>
+        </div>
+        <div class="work-for-title">Робота для:</div>
+        <div class="custom-select search-form-item">
+            <select name="status" id="status" form="vacancies-search">
+                <option value="for">Не встановлено</option>
+                <option value="student">студент</option>
+                <option value="pensioner">пенсионер</option>
+                <option value="rabotosposobniy">работоспособный</option>
+            </select>
+        </div>
+        <input class="search-form-item" type="number" placeholder="Ваш досвід роботи">
+    </div>
+</form>
