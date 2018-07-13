@@ -12,77 +12,72 @@
     border-radius: 0 0 7px 7px;
     box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
     padding: 9px 16px 12px 16px;
-    @include media($width-xs){
- padding: 10px 15px;
+    @include media($width-xs) {
+      padding: 20px 22px 17px 22px;
     }
-    @include media($width-mid){
- padding: 10px 15px;
+    @include media($width-mid) {
+      padding: 9px 16px 12px 16px;
     }
-    @include media($width-max){
- padding: 10px 15px;
+    @include media($width-max) {
+      padding: 9px 16px 12px 16px;
     }
     .main-words {
+      height: 35px;
       width: 100%;
       margin-bottom: 15px;
+      padding-left: 10px;
+      @include media($width-xs) {
+        margin-bottom: 20px;
+        padding-left: 18px;
+        height: 50px;
+      }
+      @include media($width-mid) {
+        margin-bottom: 15px;
+      }
+      @include media($width-max) {
+        margin-bottom: 15px;
+      }
     }
- .custom-select{
-  display: inline-block;
-  width: 49%;
-   margin-bottom: 11px;
-   @include media($width-xs){
-     margin-bottom: 15px;
-   }
-   @include media($width-mid){
-      margin-bottom: 15px;
-   }
-   @include media($width-max){
-     margin-bottom: 15px;
-   }
-}
-    .custom-select:nth-child(2){
+    .custom-select {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 11px;
+      @include media($width-xs) {
+        margin-bottom: 20px;
+      }
+      @include media($width-mid) {
+        margin-bottom: 15px;
+      }
+      @include media($width-max) {
+        margin-bottom: 15px;
+      }
+    }
+    .custom-select:nth-child(2) {
       margin-right: 2%;
     }
   }
-  input.search-form-item {
-    padding-left: 10px;
-    @include media($width-xs){
-padding-left: 10px;
-    }
-    @include media($width-mid){
-padding-left: 10px;
-    }
-    @include media($width-max){
-padding-left: 10px;
-    }
-  }
+
   .search-form-item {
     background-color: $mainwhite;
     box-sizing: border-box;
     border-radius: 3px;
     color: #b4b4b4;
     font-size: 12.29px;
-    height: 35px;
-    @include media($width-xs){
-      padding-left: 7px;
-      font-size: 12.29px;
-      height: 35px;
+    @include media($width-xs) {
+      font-size: 17.63px;
     }
-    @include media($width-mid){
-      padding-left: 7px;
+    @include media($width-mid) {
       font-size: 12.29px;
-      height: 35px;
     }
-    @include media($width-max){
-      padding-left: 7px;
+    @include media($width-max) {
       font-size: 12.29px;
-      height: 35px;
     }
     &::-webkit-input-placeholder {
       color: #b4b4b4;
       font-size: 12.29px;
       font-family: $museo300;
       @include media($width-xs) {
-        font-size: 17.95px;
+        font-size: 17.63px;
       }
       @include media($width-mid) {
         font-size: 38.28px;
@@ -96,7 +91,7 @@ padding-left: 10px;
       font-size: 12.29px;
       font-family: $museo300;
       @include media($width-xs) {
-        font-size: 17.95px;
+        font-size: 17.63px;
       }
       @include media($width-mid) {
         font-size: 38.28px;
@@ -110,7 +105,7 @@ padding-left: 10px;
       font-size: 12.29px;
       font-family: $museo300;
       @include media($width-xs) {
-        font-size: 17.95px;
+        font-size: 17.63px;
       }
       @include media($width-mid) {
         font-size: 38.28px;
@@ -124,7 +119,7 @@ padding-left: 10px;
       font-size: 12.29px;
       font-family: $museo300;
       @include media($width-xs) {
-        font-size: 17.95px;
+        font-size: 17.63px;
       }
       @include media($width-mid) {
         font-size: 38.28px;
@@ -134,45 +129,26 @@ padding-left: 10px;
       }
     }
   }
-  #field-activity {
-    width: 49%;
-    margin: 15px 2% 15px 0;
-    @include media($width-xs){
-
-    }
-    @include media($width-mid){
-
-    }
-    @include media($width-max){
-
-    }
-  }
-  #city {
-    width: 49%;
-    @include media($width-xs){
-
-    }
-    @include media($width-mid){
-
-    }
-    @include media($width-max){
-
-    }
-  }
   .advanced-search-title {
     padding-bottom: 3px;
     display: inline-block;
     font-size: 15.36px;
     border-bottom: 2px dotted $mainblack;
     margin-right: 31px;
-    @include media($width-xs){
-
+    @include media($width-xs) {
+      padding-bottom: 5px;
+      font-size: 22.04px;
+      margin-right: 47px;
     }
-    @include media($width-mid){
-
+    @include media($width-mid) {
+      padding-bottom: 3px;
+      font-size: 15.36px;
+      margin-right: 31px;
     }
-    @include media($width-max){
-
+    @include media($width-max) {
+      padding-bottom: 3px;
+      font-size: 15.36px;
+      margin-right: 31px;
     }
   }
   .red-button {
@@ -183,29 +159,62 @@ padding-left: 10px;
     background-color: #ff0000;
     padding: 0 0 0 6px;
     border-radius: 5px;
-    & > *{
+    @include media($width-xs) {
+      font-size: 22.04px;
+      width: 138px;
+      height: 36px;
+      padding: 0 0 0 10px;
+    }
+    @include media($width-mid) {
+      font-size: 15.36px;
+      width: 97px;
+      height: 26px;
+      padding: 0 0 0 6px;
+    }
+    @include media($width-max) {
+      font-size: 15.36px;
+      width: 97px;
+      height: 26px;
+      padding: 0 0 0 6px;
+    }
+    & > * {
       display: inline-block;
       vertical-align: middle;
     }
-    .search-btn-icon{
+    .search-btn-icon {
       background-image: url("img/searchbtnicon.svg");
       margin-left: 10px;
       background-size: cover;
       width: 19px;
       height: 19px;
+      @include media($width-xs) {
+        margin-left: 12px;
+        width: 28px;
+        height: 25px;
+      }
+      @include media($width-mid) {
+        margin-left: 10px;
+        width: 19px;
+        height: 19px;
+      }
+      @include media($width-max) {
+        margin-left: 10px;
+        width: 19px;
+        height: 19px;
+      }
     }
   }
   .search-criteria {
     padding: 15px 15px 10px 15px;
     border-bottom: 1px solid #b6b6b6;
-    @include media($width-xs){
-
+    @include media($width-xs) {
+      padding: 23px 22px 15px 22px;
     }
-    @include media($width-mid){
-
+    @include media($width-mid) {
+      padding: 15px 15px 10px 15px;
     }
-    @include media($width-max){
-
+    @include media($width-max) {
+      padding: 15px 15px 10px 15px;
     }
   }
   .search-criteria-item {
@@ -219,14 +228,20 @@ padding-left: 10px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    @include media($width-xs){
-
+    @include media($width-xs) {
+      font-size: 17.14px;
+      padding-left: 28px;
+      margin-bottom: 21px;
     }
-    @include media($width-mid){
-
+    @include media($width-mid) {
+      font-size: 11.95px;
+      padding-left: 18px;
+      margin-bottom: 15px;
     }
-    @include media($width-max){
-
+    @include media($width-max) {
+      font-size: 11.95px;
+      padding-left: 18px;
+      margin-bottom: 15px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -239,13 +254,14 @@ padding-left: 10px;
       width: 12px;
       background-color: $mainwhite;
       border-radius: 3px;
-      @include media($width-xs){
+      @include media($width-xs) {
+        width: 18px;
+        height: 18px;
+      }
+      @include media($width-mid) {
 
       }
-      @include media($width-mid){
-
-      }
-      @include media($width-max){
+      @include media($width-max) {
 
       }
       &:after {
@@ -254,15 +270,14 @@ padding-left: 10px;
         display: none;
         left: 2px;
         top: 1px;
-        width: 3px;
-        height: 6px;
-        @include media($width-xs){
+        @include media($width-xs) {
+          left: 3px;
+          top: 2px;
+        }
+        @include media($width-mid) {
 
         }
-        @include media($width-mid){
-
-        }
-        @include media($width-max){
+        @include media($width-max) {
 
         }
       }
@@ -271,19 +286,8 @@ padding-left: 10px;
       position: absolute;
       opacity: 0;
       cursor: pointer;
-      width: 12px;
-      height: 12px;
       top: 0;
       margin: 0;
-      @include media($width-xs){
-
-      }
-      @include media($width-mid){
-
-      }
-      @include media($width-max){
-
-      }
     }
     input:checked ~ .checkmark:after {
       display: block;
@@ -293,29 +297,88 @@ padding-left: 10px;
     font-size: 0;
     padding: 15px 15px 20px 15px;
     box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
-    @include media($width-xs){
-
+    @include media($width-xs) {
+      font-size: 0;
+      padding: 20px 22px 30px 22px;
     }
-    @include media($width-mid){
-
+    @include media($width-mid) {
+      font-size: 0;
+      padding: 15px 15px 20px 15px;
     }
-    @include media($width-max){
-
+    @include media($width-max) {
+      font-size: 0;
+      padding: 15px 15px 20px 15px;
     }
     input.search-form-item {
       width: 49%;
       display: inline-block;
+      height: 30px;
+      padding-left: 10px;
+      @include media($width-xs) {
+        height: 45px;
+        padding-left: 18px;
+      }
+      @include media($width-mid) {
+        height: 50px;
+      }
+      @include media($width-max) {
+        font-size: 12.29px;
+        padding-left: 5px;
+        margin-top: 4px;
+      }
     }
-    .work-for-title{
+    .work-for-title {
       font-size: 12.29px;
-      padding-left: 5px;
-      margin-top: 4px;
+      padding-left: 8px;
+      margin-top: 11px;
+      @include media($width-xs) {
+        font-size: 17.63px;
+        padding-left: 12px;
+        margin-top: 12px;
+      }
+      @include media($width-mid) {
+        font-size: 12.29px;
+        padding-left: 5px;
+        margin-top: 4px;
+      }
+      @include media($width-max) {
+        font-size: 12.29px;
+        padding-left: 5px;
+        margin-top: 4px;
+      }
     }
-    .custom-select:nth-child(3){
+    .custom-select:nth-child(3) {
       width: 49%;
       margin-right: 2%;
       display: inline-block;
     }
-  }
+    .select-items div,.select-selected{
+      height: 30px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+      @include media($width-xs) {
+        height: 45px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+      @include media($width-mid) {
 
+      }
+      @include media($width-max) {
+
+      }
+    }
+    .select-selected:after{
+      top: 13px;
+      @include media($width-xs) {
+        top: 19px;
+      }
+      @include media($width-mid) {
+
+      }
+      @include media($width-max) {
+
+      }
+    }
+  }
 }
