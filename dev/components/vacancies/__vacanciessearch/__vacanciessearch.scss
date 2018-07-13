@@ -1,7 +1,12 @@
 .vacancies-search {
+  margin: 0 auto;
   font-family: $museo300, sans-serif;
   color: $mainblack;
   background-color: #c4c4c4;
+  position: relative;
+  @include media($width-max){
+    max-width: 1065px;
+  }
   input, select {
     outline: none;
     border: none;
@@ -19,7 +24,7 @@
       padding: 43px 50px 33px 50px;
     }
     @include media($width-max) {
-      padding: 9px 16px 12px 16px;
+      padding: 14px 12px 12px 12px;
     }
     .main-words {
       height: 35px;
@@ -36,10 +41,16 @@
         padding-left: 30px;
         height: 105px;      }
       @include media($width-max) {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+        width: 595px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 44px;
+        margin-right: 10px;
+        padding-left: 20px;
       }
     }
-    .custom-select {
+    .field-activity, .search-city {
       display: inline-block;
       width: 49%;
       margin-bottom: 11px;
@@ -50,11 +61,20 @@
         margin-bottom: 40px;
       }
       @include media($width-max) {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+        width: 130px;
+        vertical-align: middle;
       }
     }
-    .custom-select:nth-child(2) {
+    .field-activity {
       margin-right: 2%;
+      @include media($width-max) {
+        margin-bottom: 0;
+        position: absolute;
+        top: 111px;
+        left: 12px;
+        width: 357px;
+      }
     }
   }
 
@@ -72,7 +92,7 @@
       border-radius: 9px;
     }
     @include media($width-max) {
-      font-size: 12.29px;
+      font-size: 18.75px;
     }
     &::-webkit-input-placeholder {
       color: #b4b4b4;
@@ -85,7 +105,7 @@
         font-size: 36px;
       }
       @include media($width-max) {
-        font-size: 11.49px;
+        font-size: 18.75px;
       }
     }
     &::-moz-placeholder { /* Firefox 19+ */
@@ -99,7 +119,7 @@
         font-size: 36px;
       }
       @include media($width-max) {
-        font-size: 11.49px;
+        font-size: 18.75px;
       }
     }
     &:-ms-input-placeholder { /* IE 10+ */
@@ -113,7 +133,7 @@
         font-size: 36px;
       }
       @include media($width-max) {
-        font-size: 11.49px;
+        font-size: 18.75px;
       }
     }
     &:-moz-placeholder { /* Firefox 18- */
@@ -127,7 +147,7 @@
         font-size: 36px;
       }
       @include media($width-max) {
-        font-size: 11.49px;
+        font-size: 18.75px;
       }
     }
   }
@@ -148,9 +168,15 @@
       margin-right: 93px;
     }
     @include media($width-max) {
-      padding-bottom: 3px;
-      font-size: 15.36px;
-      margin-right: 31px;
+      position: relative;
+      right: -117px;
+      color: $mainwhite;
+      padding-bottom: 0;
+      font-size: 18.75px;
+      line-height: 25px;
+      margin-right: 0;
+      border-color: $mainwhite;
+      vertical-align: middle;
     }
   }
   .red-button {
@@ -174,14 +200,22 @@
       padding: 0 0 0 30px;
     }
     @include media($width-max) {
-      font-size: 15.36px;
-      width: 97px;
-      height: 26px;
-      padding: 0 0 0 6px;
+      border-radius: 7px;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      position: relative;
+      right: 138px;
+      vertical-align: middle;
     }
     & > * {
       display: inline-block;
       vertical-align: middle;
+    }
+    & span:first-child{
+      @include media($width-max){
+        display: none;
+      }
     }
     .search-btn-icon {
       background-image: url("img/searchbtnicon.svg");
@@ -200,9 +234,11 @@
         height: 52px;
       }
       @include media($width-max) {
-        margin-left: 10px;
-        width: 19px;
-        height: 19px;
+        margin-left: 0px;
+        width: 31px;
+        height: 30px;
+        position: relative;
+        bottom: 7px;
       }
     }
   }
@@ -216,7 +252,8 @@
       padding: 44px 50px 30px 50px;
     }
     @include media($width-max) {
-      padding: 15px 15px 10px 15px;
+      padding: 12px 25px 12px 22px;
+      border: none;
     }
   }
   .search-criteria-item {
@@ -241,12 +278,16 @@
       margin-bottom: 43px;
     }
     @include media($width-max) {
-      font-size: 11.95px;
+      display: inline-block;
+      margin-right: 86px;
+      font-size: 12.26px;
+      line-height: 13px;
       padding-left: 18px;
-      margin-bottom: 15px;
+      margin-bottom: 0;
     }
     &:last-child {
       margin-bottom: 0;
+      margin-right: 0;
     }
     .checkmark {
       position: absolute;
@@ -266,7 +307,9 @@
         border-radius: 9px;
       }
       @include media($width-max) {
-
+        width: 13px;
+        height: 13px;
+        border-radius: 3px;
       }
       &:after {
         content: "✔";
@@ -277,9 +320,6 @@
         @include media($width-xs) {
           left: 3px;
           top: 2px;
-        }
-        @include media($width-max) {
-
         }
       }
     }
@@ -305,11 +345,27 @@
       padding: 42px 50px 55px 50px;
     }
     @include media($width-max) {
-      padding: 15px 15px 20px 15px;
+      padding: 0 12px 14px 382px;
     }
-    input.search-form-item {
+    .specialty{
+      margin-bottom: 15px;
+      @include media($width-xs) {
+        margin-bottom: 20px;
+      }
+      @include media($width-mid) {
+        margin-bottom: 38px;}
+      @include media($width-max) {
+        width: 260px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0px;
+        margin-right: 10px;
+      }
+    }
+    .experiences {
       width: 49%;
       display: inline-block;
+      vertical-align: middle;
       height: 30px;
       padding-left: 10px;
       @include media($width-xs) {
@@ -321,33 +377,20 @@
         padding-left: 30px;
       }
       @include media($width-max) {
-
-      }
-    }
-    .work-for-title {
-      font-size: 12.29px;
-      padding-left: 8px;
-      margin-top: 11px;
-      @include media($width-xs) {
-        font-size: 17.63px;
-        padding-left: 12px;
-        margin-top: 12px;
-      }
-      @include media($width-mid) {
-        font-size: 36px;
+        height: 44px;
+        width: 155px;
         padding-left: 20px;
-        margin-top: 20px;
-      }
-      @include media($width-max) {
-        font-size: 12.29px;
-        padding-left: 5px;
-        margin-top: 4px;
       }
     }
-    .custom-select:nth-child(3) {
+    .status {
       width: 49%;
       margin-right: 2%;
       display: inline-block;
+      vertical-align: middle;
+      @include media($width-max){
+        width: 232px;
+        margin-right: 10px;
+      }
     }
     .select-items div,.select-selected{
       height: 30px;
@@ -364,7 +407,9 @@
         padding-bottom: 27px;
       }
       @include media($width-max) {
-
+        height: 44px;
+        padding-top: 13px;
+        padding-bottom: 13px;
       }
     }
     .select-selected:after{
@@ -376,7 +421,7 @@
         top: 40px;
       }
       @include media($width-max) {
-
+        top: 19px;
       }
     }
   }

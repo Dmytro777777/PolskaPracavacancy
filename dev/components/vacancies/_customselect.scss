@@ -28,7 +28,7 @@
     }
   @include media($width-max) {
     font-size: 20px;
-    top: 14px;
+    top: 19px;
   }
 }
 
@@ -53,7 +53,8 @@
     height: 105px;
   }
   @include media($width-max) {
-    padding: 11.5px 10px;
+    padding: 13px 7px 13px 20px;
+    height: 44px;
   }
 }
 

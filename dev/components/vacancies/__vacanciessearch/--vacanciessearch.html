@@ -1,7 +1,7 @@
 <form action="#" id="vacancies-search" class="vacancies-search">
     <div class="vacancies-main-search">
         <input type="text" class="main-words search-form-item" placeholder="Ключові слова">
-        <div class="custom-select search-form-item">
+        <div class="custom-select search-form-item field-activity">
         <select name="field-activity" id="field-activity" form="vacancies-search">
             <option value="sfera">Сфера діяльності</option>
             <option value="buhgalter">Бухгалтер</option>
@@ -10,7 +10,7 @@
             <option value="hr">HR</option>
         </select>
         </div>
-        <div class="custom-select search-form-item">
+        <div class="custom-select search-form-item search-city">
         <select class="search-form-item" name="city" id="city" form="vacancies-search">
             <option value="misto">Місто</option>
             <option value="kiev">Киев</option>
@@ -36,7 +36,7 @@
                 class="checkmark"></span></label>
     </div>
     <div class="work-for">
-        <div class="custom-select search-form-item">
+        <div class="custom-select search-form-item specialty">
             <select form="vacancies-search" name="specialty" id="specialty">
                 <option value="specialty">Спеціальність</option>
                 <option value="bakalvr">бакалавр</option>
@@ -44,15 +44,14 @@
                 <option value="magistr">магистр</option>
             </select>
         </div>
-        <div class="work-for-title">Робота для:</div>
-        <div class="custom-select search-form-item">
+        <div class="custom-select search-form-item status">
             <select name="status" id="status" form="vacancies-search">
-                <option value="for">Не встановлено</option>
+                <option value="for">Робота для</option>
                 <option value="student">студент</option>
                 <option value="pensioner">пенсионер</option>
                 <option value="rabotosposobniy">работоспособный</option>
             </select>
         </div>
-        <input class="search-form-item" type="number" placeholder="Ваш досвід роботи">
+        <input class="search-form-item experiences" type="number" placeholder="Досвід роботи">
     </div>
 </form>
