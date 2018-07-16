@@ -12,10 +12,9 @@
     padding-bottom: 11px;
   }
   @include media($width-mid){
-    border-radius: 9px;
-    margin-bottom: 3px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    margin-bottom: 12px;
+    padding-top: 30px;
+    padding-bottom: 27px;
   }
   @include media($width-max){
     border-radius: 9px;
@@ -30,7 +29,8 @@
    padding: 0 26px 7px 26px;
   }
   @include media($width-mid){
-    padding: 0 16px 5px 16px;
+    padding: 0 49px 14px 49px;
+    border-width: 2px;
   }
   @include media($width-max){
     padding: 0 16px 5px 16px;
@@ -42,7 +42,7 @@
     margin-bottom: 11px;
   }
   @include media($width-mid){
-    margin-bottom: 8px;
+    margin-bottom: 22px;
   }
   @include media($width-max){
     margin-bottom: 8px;
@@ -56,7 +56,7 @@ color: $mainblack;
     font-size: 19.96px;
   }
   @include media($width-mid){
-     font-size: 13.9px;
+     font-size: 41px;
   }
   @include media($width-max){
     font-size: 13.9px;
@@ -68,7 +68,7 @@ color: $mainblack;
      font-size: 14.4px;
   }
   @include media($width-mid){
-     font-size: 10.17px;
+     font-size: 29.8px;
   }
   @include media($width-max){
      font-size: 10.17px;
@@ -86,8 +86,8 @@ color: $mainblack;
      line-height: 30px;
   }
   @include media($width-mid){
-     line-height: 20px;
-  margin-top: 1px;
+     line-height: 60px;
+  margin-top: 5px;
   }
   @include media($width-max){
      line-height: 20px;
@@ -104,8 +104,8 @@ color: $mainblack;
   padding: 13px 23px 2px 32px;
   }
   @include media($width-mid){
-    font-size: 12.21px;
-  padding: 9px 16px 0 21px;
+    font-size: 36px;
+  padding: 25px 49px 0 61px;
   }
   @include media($width-max){
     font-size: 12.21px;
@@ -128,9 +128,9 @@ color: $mainblack;
       font-size: 19.47px;
     }
     @include media($width-mid){
-      width: 117px;
-      height: 30px;
-      margin-left: 11%;
+      width: 345px;
+      height: 84px;
+      font-size: 39.99px;
     }
     @include media($width-max){
       width: 117px;
@@ -144,7 +144,7 @@ color: $mainblack;
     margin-right: 7px;
   }
   @include media($width-mid){
-    margin-right: 7px;
+    margin-right: 14px;
   }
   @include media($width-max){
     margin-right: 4px;
