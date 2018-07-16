@@ -1,11 +1,35 @@
 .vacancies{
   background-image: url("img/mainbg.png");
   padding-top: 5px;
+  @include media($width-xs){
+    padding-top: 14px;
+  }
+  @include media($width-mid){
+    padding-top: 5px;
+  }
+  @include media($width-max){
+    padding-top: 5px;
+  }
 }
 .search-result-container{
   font-size: 12.21px;
   padding-left: 16px;
   margin-bottom: 8px;
+  @include media($width-xs){
+font-size: 17.52px;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  }
+  @include media($width-mid){
+font-size: 12.21px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  }
+  @include media($width-max){
+font-size: 12.21px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  }
 }
 .pin-icon{
   display: inline-block;
@@ -16,6 +40,18 @@
   background-size: cover;
   width: 12px;
   height: 15px;
+  @include media($width-xs){
+ width: 16px;
+  height: 21px;
+  }
+  @include media($width-mid){
+ width: 12px;
+  height: 15px;
+  }
+  @include media($width-max){
+ width: 12px;
+  height: 15px;
+  }
 }
 .search-result{
 display: inline-block;
@@ -24,6 +60,19 @@ display: inline-block;
   background-color: $mainwhite;
   padding: 7px 8px 7px 6px;
   border-radius: 4px;
+  @include media($width-xs){
+ padding: 11px 9px 11px 5px;
+  border-radius: 9px;
+    margin-left: 4px;
+  }
+  @include media($width-mid){
+ padding: 7px 8px 7px 6px;
+  border-radius: 4px;
+  }
+  @include media($width-max){
+ padding: 7px 8px 7px 6px;
+  border-radius: 4px;
+  }
 }
 .search-result-city{
 font-family: $museo700, sans-serif;
@@ -41,23 +90,66 @@ color: #ff0000;
   font-family: $museo500;
   color: #808080;
   margin-top: 11px;
+  @include media($width-xs){
+    margin-top: 16px;
+  }
+  @include media($width-mid){
+    margin-top: 11px;
+  }
+  @include media($width-max){
+    margin-top: 11px;
+  }
 }
 .vacancies-page-count{
   box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
   background-color: $mainwhite;
-  border-radius: 9px;
-  font-size: 16.28px;
   font-family: $museo300, sans-serif;
   color: $mainblack;
+  border-radius: 9px;
+  font-size: 16.28px;
   padding: 13px 16px 16px 130px;
   margin-bottom: 15px;
   margin-top: 15px;
+  text-align: right;
+  @include media($width-xs){
+    border-radius: 9px;
+    font-size: 23.37px;
+    padding: 19px 23px 22px 26px;
+    margin-bottom: 31px;
+    margin-top: 18px;
+  }
+  @include media($width-mid){
+    border-radius: 9px;
+    font-size: 16.28px;
+    padding: 13px 16px 16px 130px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  @include media($width-max){
+    border-radius: 9px;
+    font-size: 16.28px;
+    padding: 13px 16px 16px 130px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 }
-.vacansies-page-number{
-  margin-right: 41%;
+.vacancies-page-count-container{
+  width: 62%;
+  display: inline-block;
 }
 .vacansies-page-next{
+  display: inline-block;
+  margin-left: 41%;
   font-size: 14.2px;
+  @include media($width-xs){
+    font-size: 20.39px;
+  }
+  @include media($width-mid){
+    font-size: 14.2px;
+  }
+  @include media($width-max){
+    font-size: 14.2px;
+  }
 }
 .vacansies-page-next span{
 color: $mainred;
