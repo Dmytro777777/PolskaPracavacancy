@@ -1,8 +1,11 @@
 @font-face {
+  font-family: $days;
+  src: url('fonts/Days.ttf');
+}
+@font-face {
   font-family: $echo;
   src: url('fonts/echo.otf');
 }
-
 @font-face {
   font-family: $echomed;
   src: url('fonts/echomed.otf');

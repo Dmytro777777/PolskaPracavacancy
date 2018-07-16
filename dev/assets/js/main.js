@@ -85,3 +85,110 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+// // banner autoplay script starts
+// (function () {
+//     function Slideshow(element) {
+//         this.el = document.querySelector(element);
+//         this.init();
+//     }
+//
+//     Slideshow.prototype = {
+//         init: function () {
+//             // if(screen.width>1279){
+//                 this.slides = this.el.querySelectorAll(".mySlides");
+//                 this.index = 0;
+//                 this.timer = null;
+//                 this.action();
+//                 this.stopStart();
+//             // }
+//         },
+//         _slideTo: function (slide) {
+//             var currentSlide = this.slides[slide];
+//             currentSlide.style.display = "block";
+//             for (var i = 0; i < this.slides.length; i++) {
+//                 var slide = this.slides[i];
+//                 if (slide !== currentSlide) {
+//                     slide.style.display = "none";
+//                 }
+//             }
+//         },
+//         action: function () {
+//             var self = this;
+//             self.timer = setInterval(function () {
+//                 self.index++;
+//                 if (self.index == self.slides.length) {
+//                     self.index = 0;
+//                 }
+//                 self._slideTo(self.index);
+//
+//             }, 3000);
+//         },
+//         stopStart: function () {
+//             var self = this;
+//             self.el.addEventListener("mouseover", function () {
+//                 clearInterval(self.timer);
+//                 self.timer = null;
+//
+//             }, false);
+//             self.el.addEventListener("mouseout", function () {
+//                 self.action();
+//
+//             }, false);
+//         }
+//
+//     };
+//
+//     document.addEventListener("DOMContentLoaded", function () {
+//
+//         // var studySlider = new Slideshow(".slideshow-container");
+//         // var coursesSlider = new Slideshow(".slideshow-container2");
+//         var vacanciesSlider = new Slideshow(".vacancies-slider");
+//     });
+//
+// })();
+//
+// // banner autoplay script ends
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+var vacanciesSlider = document.querySelector(".vacancies-slider");
+
+var timer = '';
+vacanciesSlider.addEventListener("mouseout", function () {
+    timer = setInterval(function () {
+        plusSlides(1);
+    }, 3000);
+});
+vacanciesSlider.addEventListener("mouseover", function () {
+    clearInterval(timer);
+    timer = null;
+}, false);
+
+// banner script ends
