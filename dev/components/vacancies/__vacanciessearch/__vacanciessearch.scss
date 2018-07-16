@@ -4,6 +4,7 @@
   color: $mainblack;
   background-color: #c4c4c4;
   position: relative;
+  display: none;
   @include media($width-max){
     max-width: 1065px;
   }

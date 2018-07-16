@@ -1,0 +1,54 @@
+.vacancy-card{
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: $mainwhite;
+  border-radius: 9px;
+  margin-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+.vacancy-card-main{
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+}
+.vacancy-name, .vacancy-company{
+  margin-bottom: 8px;
+}
+.vacancy-name{
+color: $mainblack;
+  font-size: 13.9px;
+  font-family: $museo700;
+}
+.vacancy-company, .employment-type, .vacancy-description{
+  font-size: 10.17px;
+}
+.vacancy-company, .employment-type{
+  font-family: $museo100;
+  color: #828282;
+}
+.vacancy-description{
+color: $mainblack;
+  line-height: 20px;
+  margin-top: 1px;
+}
+.vacancy-card-footer{
+  font-family: $museo300, sans-serif;
+  color: $mainblack;
+  font-size: 12.21px;
+  padding-left: 21px;
+  padding-right: 16px;
+  padding-top: 9px;
+}
+.vacancy-card-footer>*{
+  display: inline-block;
+  vertical-align: middle;
+}
+.vacancy-city{
+  margin-right: 4px;
+}
+  .red-button{
+    width: 117px;
+    height: 30px;
+    margin-left: 11%;
+  }
+}
