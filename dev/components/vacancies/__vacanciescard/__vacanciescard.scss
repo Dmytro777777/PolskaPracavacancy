@@ -17,10 +17,14 @@
     padding-bottom: 27px;
   }
   @include media($width-max){
-    border-radius: 9px;
+    background-color: #fafafa;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0px;
     margin-bottom: 3px;
-    padding-top: 10px;
-    padding-bottom: 9px;
+    padding: 25px 24px 12px 35px;
+    box-sizing: border-box;
+    //box-shadow: none;
   }
 .vacancy-card-main{
   padding: 0 16px 5px 16px;
@@ -33,7 +37,8 @@
     border-width: 2px;
   }
   @include media($width-max){
-    padding: 0 16px 5px 16px;
+    padding:0;
+    border: 0;
   }
 }
 .vacancy-name, .vacancy-company{
@@ -45,9 +50,19 @@
     margin-bottom: 22px;
   }
   @include media($width-max){
-    margin-bottom: 8px;
+    margin-bottom: 0px;
   }
 }
+  .vacancy-company{
+    @include media($width-max){
+      margin-bottom: 50px;
+    }
+  }
+  .employment-type{
+    @include media($width-max){
+      margin-bottom: 5px;
+    }
+  }
 .vacancy-name{
 color: $mainblack;
   font-size: 13.9px;
@@ -59,7 +74,8 @@ color: $mainblack;
      font-size: 41px;
   }
   @include media($width-max){
-    font-size: 13.9px;
+    font-size: 25px;
+    margin-bottom: 14px;
   }
 }
 .vacancy-company, .employment-type, .vacancy-description{
@@ -71,7 +87,7 @@ color: $mainblack;
      font-size: 29.8px;
   }
   @include media($width-max){
-     font-size: 10.17px;
+     font-size: 16.67px;
   }
 }
 .vacancy-company, .employment-type{
@@ -90,8 +106,8 @@ color: $mainblack;
   margin-top: 5px;
   }
   @include media($width-max){
-     line-height: 20px;
-  margin-top: 1px;
+     line-height: 32px;
+  margin-top: 0;
   }
 }
 .vacancy-card-footer{
@@ -99,6 +115,7 @@ color: $mainblack;
   color: $mainblack;
   font-size: 12.21px;
   padding: 9px 16px 0 21px;
+  overflow: auto;
   @include media($width-xs){
     font-size: 17.52px;
   padding: 13px 23px 2px 32px;
@@ -108,18 +125,36 @@ color: $mainblack;
   padding: 25px 49px 0 61px;
   }
   @include media($width-max){
-    font-size: 12.21px;
-  padding: 9px 16px 0 21px;
+    font-size: 16.67px;
+  padding: 0;
+    position: relative;
+    height: 36px;
+    top: -10px;
   }
 }
 .vacancy-card-footer>*{
   display: inline-block;
   vertical-align: middle;
 }
+  .icon-city-term-box>*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .icon-city-term-box{
+    padding-top: 9px;
+    @include media($width-mid){
+      padding-top: 23px;
+    }
+    @include media($width-max) {
+      padding-top: 0;
+      position: absolute;
+      top: -108px;
+    }
+  }
   .red-button{
     width: 117px;
     height: 30px;
-    margin-left: 11%;
+    float: right;
     font-size: 13.56px;
     @include media($width-xs){
       width: 168px;
@@ -133,9 +168,12 @@ color: $mainblack;
       font-size: 39.99px;
     }
     @include media($width-max){
-      width: 117px;
-      height: 30px;
-      margin-left: 11%;
+      width: 128px;
+      height: 36px;
+      margin-left: 0;
+      position: absolute;
+      right: 0;
+      font-size: 15.83px;
     }
   }
 .vacancy-city{

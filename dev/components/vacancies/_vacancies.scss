@@ -11,6 +11,14 @@
     padding-top: 5px;
   }
 }
+.vacancies-container {
+  @include media($width-max) {
+    font-size: 0;
+    margin: 0 auto;
+    width: 1065px;
+    margin-top: 120px;
+  }
+}
 .search-result-container{
   font-size: 12.21px;
   padding-left: 16px;
@@ -26,9 +34,7 @@ font-size: 36px;
   margin-bottom: 18px;
   }
   @include media($width-max){
-font-size: 12.21px;
-  padding-left: 16px;
-  margin-bottom: 8px;
+display: none;
   }
 }
 .pin-icon{
@@ -49,8 +55,8 @@ font-size: 12.21px;
   height: 44px;
   }
   @include media($width-max){
- width: 12px;
-  height: 15px;
+ width: 16px;
+  height: 18px;
   }
 }
 .search-result{
@@ -97,8 +103,62 @@ color: #ff0000;
     margin-top: 36px;
   }
   @include media($width-max){
-    margin-top: 11px;
+    display: none;
   }
+}
+.number-search-vacancies-1336{
+  display: none;
+  @include media($width-max){
+    display: block;
+color: #292929;
+    font-size: 14.17px;
+    font-family: $museo300;
+    border-bottom: 2px solid #a0a0a0;
+    background-color: #fafafa;
+    border-radius: 9px 9px 0 0;
+    padding: 24px 35px 28px 35px;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+  span:first-child{
+    @include media($width-max){
+      color: #fe0000;
+    }
+  }
+}
+.search-period{
+  color: #fe0000;
+  display: inline-block;
+  position: relative;
+  &:after{
+    content: "›";
+    position: absolute;
+    color: #292929;
+    font-family: $museo700;
+    font-size: 25px;
+    transform: rotate(90deg);
+    right: -22px;
+    font-weight: bold;
+    top: -6px;
+  }
+}
+.search-period-dropdown{
+  position: absolute;
+  top: 17px;
+  left: -6px;
+  color: #a0a0a0;
+  background-color: $mainwhite;
+  border-radius: 3px;
+  padding: 7px;
+}
+.search-period-dropdown-item{
+  margin-bottom: 7px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.search-period-dropdown-item-active{
+color: #131313;
 }
 .vacancies-page-count{
   box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
@@ -107,10 +167,11 @@ color: #ff0000;
   color: $mainblack;
   border-radius: 9px;
   font-size: 16.28px;
-  padding: 13px 16px 16px 130px;
+  padding: 13px 16px 16px 21px;
   margin-bottom: 15px;
   margin-top: 15px;
-  text-align: right;
+  text-align: center;
+  position: relative;
   @include media($width-xs){
     border-radius: 9px;
     font-size: 23.37px;
@@ -126,20 +187,59 @@ color: #ff0000;
     margin-top: 37px;
   }
   @include media($width-max){
-    border-radius: 9px;
-    font-size: 16.28px;
-    padding: 13px 16px 16px 130px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    border-radius: 0 0 9px 9px;
+    font-size: 16.18px;
+    padding: 26px 16px 23px 45px;
+    margin-bottom: 0;
+    background-color: #fafafa;
+    margin-top: 0;
+    text-align: left;
   }
 }
-.vacancies-page-count-container{
-  width: 62%;
-  display: inline-block;
+.vacancies-cards-container{
+  @include media($width-max){
+    display: inline-block;
+    width: 820px;
+    margin-bottom: 124px;
+    border-radius: 0 0 9px 9px;
+  }
 }
-.vacansies-page-next{
+.vacancies-page-number{
   display: inline-block;
-  margin-left: 41%;
+  font-size: 16.28px;
+  @include media($width-xs){
+    font-size: 23.37px;
+  }
+  @include media($width-mid){
+    font-size: 48px;
+  }
+  @include media($width-max){
+    font-size: 19.58px;
+  }
+  span:first-child{
+    @include media($width-max){
+      display: none;
+    }
+  }
+}
+.vacancies-page-number-item{
+  @include media($width-max){
+    margin-right: 13px;
+  }
+}
+.vacancies-page-number-item-active{
+  color: #ff0101;
+}
+.page-number-box{
+  display: none;
+  @include media($width-max){
+    display: inline-block;
+  }
+}
+.vacancies-page-next{
+  display: inline-block;
+  position: absolute;
+  right: 16px;
   font-size: 14.2px;
   @include media($width-xs){
     font-size: 20.39px;
@@ -148,10 +248,12 @@ color: #ff0000;
     font-size: 41.68px;
   }
   @include media($width-max){
-    font-size: 14.2px;
+    position: static;
+    font-size: 19.58px;
+    margin-left: -4px;
   }
 }
-.vacansies-page-next span{
+.vacancies-page-next span{
 color: $mainred;
 font-weight: bold;
 }

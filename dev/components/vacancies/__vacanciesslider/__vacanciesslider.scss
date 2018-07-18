@@ -2,6 +2,10 @@
   position: relative;
   border-bottom: 3px solid $mainred;
   font-size: 0;
+  display: none;
+  @include media($width-max){
+    display: block;
+  }
   .vacancies-slide-content-box{
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
