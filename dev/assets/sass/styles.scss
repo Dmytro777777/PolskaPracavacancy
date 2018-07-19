@@ -43,3 +43,46 @@ color: $mainwhite;
 @import "../../components/vacancies/__vacanciescard/_vacanciescard";
 @import "../../components/vacancies/__vacanciesslider/_vacanciesslider";
 @import "../../components/vacancies/__vacanciescategoriesmenu/_vacanciescategoriesmenu";
+
+.header .vacancies-logo-text{
+  text-transform: none;
+  width: 125px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  color: #a0a0a0;
+  font-size: 12.45px;
+  border-radius: 10px;
+  font-family: "MuseoSansCyrl-100", sans-serif;
+  @include media($width-xs){
+    width: 215px;
+    font-size: 18px;
+  }
+  @include media($width-mid){
+    width: 586px;
+    font-size: 29.17px;
+  }
+}
+.turn-search-panel-button {
+  cursor: pointer;
+  background-image: url("/local/templates/polska_praca/img/searchsettingsicon.svg");
+  width: 19px;
+  height: 19px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  right: 80px;
+  top: 12px;
+  @include media($width-xs) {
+    right: 100px;
+    top: 20px;
+  }
+  @include media($width-mid) {
+    right: 150px;
+    top: 30px;
+  }
+  @include media($width-max) {
+
+  }
+}

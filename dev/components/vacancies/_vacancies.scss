@@ -1,35 +1,28 @@
 .vacancies{
   background-image: url("img/mainbg.png");
-  padding-top: 5px;
-  @include media($width-xs){
-    padding-top: 14px;
-  }
-  @include media($width-mid){
-    padding-top: 36px;
-  }
-  @include media($width-max){
-    padding-top: 5px;
-  }
 }
 .vacancies-container {
   @include media($width-max) {
     font-size: 0;
     margin: 0 auto;
     width: 1065px;
-    margin-top: 120px;
+    margin-top: 23px;
   }
 }
 .search-result-container{
   font-size: 12.21px;
   padding-left: 16px;
   margin-bottom: 8px;
+  padding-top: 5px;
   @include media($width-xs){
+    padding-top: 14px;
 font-size: 17.52px;
   padding-left: 26px;
   margin-bottom: 12px;
   }
   @include media($width-mid){
 font-size: 36px;
+    padding-top: 36px;
   padding-left: 49px;
   margin-bottom: 18px;
   }
@@ -130,6 +123,7 @@ color: #292929;
   color: #fe0000;
   display: inline-block;
   position: relative;
+  padding-right: 22px;
   &:after{
     content: "›";
     position: absolute;
@@ -137,12 +131,13 @@ color: #292929;
     font-family: $museo700;
     font-size: 25px;
     transform: rotate(90deg);
-    right: -22px;
+    right: 0px;
     font-weight: bold;
     top: -6px;
   }
 }
 .search-period-dropdown{
+  display: none;
   position: absolute;
   top: 17px;
   left: -6px;

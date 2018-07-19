@@ -86,70 +86,7 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
-
-// // banner autoplay script starts
-// (function () {
-//     function Slideshow(element) {
-//         this.el = document.querySelector(element);
-//         this.init();
-//     }
-//
-//     Slideshow.prototype = {
-//         init: function () {
-//             // if(screen.width>1279){
-//                 this.slides = this.el.querySelectorAll(".mySlides");
-//                 this.index = 0;
-//                 this.timer = null;
-//                 this.action();
-//                 this.stopStart();
-//             // }
-//         },
-//         _slideTo: function (slide) {
-//             var currentSlide = this.slides[slide];
-//             currentSlide.style.display = "block";
-//             for (var i = 0; i < this.slides.length; i++) {
-//                 var slide = this.slides[i];
-//                 if (slide !== currentSlide) {
-//                     slide.style.display = "none";
-//                 }
-//             }
-//         },
-//         action: function () {
-//             var self = this;
-//             self.timer = setInterval(function () {
-//                 self.index++;
-//                 if (self.index == self.slides.length) {
-//                     self.index = 0;
-//                 }
-//                 self._slideTo(self.index);
-//
-//             }, 3000);
-//         },
-//         stopStart: function () {
-//             var self = this;
-//             self.el.addEventListener("mouseover", function () {
-//                 clearInterval(self.timer);
-//                 self.timer = null;
-//
-//             }, false);
-//             self.el.addEventListener("mouseout", function () {
-//                 self.action();
-//
-//             }, false);
-//         }
-//
-//     };
-//
-//     document.addEventListener("DOMContentLoaded", function () {
-//
-//         // var studySlider = new Slideshow(".slideshow-container");
-//         // var coursesSlider = new Slideshow(".slideshow-container2");
-//         var vacanciesSlider = new Slideshow(".vacancies-slider");
-//     });
-//
-// })();
-//
-// // banner autoplay script ends
+// banner vacancies script
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -191,4 +128,49 @@ vacanciesSlider.addEventListener("mouseover", function () {
     timer = null;
 }, false);
 
-// banner script ends
+// banner vacancies script ends
+
+// show/hide search script starts
+
+const advancedSearch = document.querySelector(".advanced-search-title");
+const searchCriteria = document.querySelector(".search-criteria");
+const workFor = document.querySelector(".work-for");
+const fieldActivity = document.querySelector(".field-activity");
+advancedSearch.addEventListener("click", function () {
+searchCriteria.classList.toggle("vacancies-show");
+workFor.classList.toggle("vacancies-show");
+fieldActivity.classList.toggle("vacancies-show-inline");
+});
+
+// show/hide search script ends
+
+// search period dropdown starts
+
+const searchPeriod = document.querySelector(".search-period");
+const periodDropdown = document.querySelector(".search-period-dropdown");
+const dropdownItemCollection = document.getElementsByClassName('search-period-dropdown-item');
+function showPeriodDropdown(e) {
+    periodDropdown.style.display = 'block';
+    e.stopPropagation();
+}
+function hidePeriodDropdown(e) {
+    periodDropdown.style.display = 'none';
+    e.stopPropagation();
+}
+function changePeriod(e) {
+    if(e.target.classList.contains("search-period-dropdown-item")){
+        for(var i = 0; i<dropdownItemCollection.length; i++){
+            dropdownItemCollection[i].classList.remove("search-period-dropdown-item-active");
+            e.target.classList.add('search-period-dropdown-item-active');
+            let periodInner = e.target.innerHTML;
+            periodDropdown.style.display = 'none';
+            searchPeriod.firstElementChild.innerHTML = periodInner;
+            e.stopPropagation();
+        }
+    }
+}
+searchPeriod.addEventListener("click", showPeriodDropdown);
+periodDropdown.addEventListener("click", changePeriod);
+document.addEventListener('click', hidePeriodDropdown);
+
+// search period dropdown ends

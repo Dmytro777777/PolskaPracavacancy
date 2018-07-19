@@ -95,6 +95,7 @@ color: $mainblack;
   color: #828282;
 }
 .vacancy-description{
+  font-family: $museo300, sans-serif;
 color: $mainblack;
   line-height: 20px;
   margin-top: 1px;
@@ -130,6 +131,7 @@ color: $mainblack;
     position: relative;
     height: 36px;
     top: -10px;
+    overflow: initial;
   }
 }
 .vacancy-card-footer>*{

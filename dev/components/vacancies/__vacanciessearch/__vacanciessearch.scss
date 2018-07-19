@@ -4,7 +4,7 @@
   color: $mainblack;
   background-color: #c4c4c4;
   position: relative;
-  display: none;
+  display: block;
   @include media($width-max){
     max-width: 1065px;
   }
@@ -27,6 +27,7 @@
     @include media($width-max) {
       padding: 14px 12px 12px 12px;
     }
+  }
     .main-words {
       height: 35px;
       width: 100%;
@@ -70,14 +71,14 @@
     .field-activity {
       margin-right: 2%;
       @include media($width-max) {
+        display: none;
         margin-bottom: 0;
         position: absolute;
-        top: 111px;
+        top: 107px;
         left: 12px;
         width: 357px;
       }
     }
-  }
 
   .search-form-item {
     background-color: $mainwhite;
@@ -153,6 +154,7 @@
     }
   }
   .advanced-search-title {
+    cursor: pointer;
     padding-bottom: 3px;
     display: inline-block;
     font-size: 15.36px;
@@ -244,6 +246,7 @@
     }
   }
   .search-criteria {
+    display: none;
     padding: 15px 15px 10px 15px;
     border-bottom: 1px solid #b6b6b6;
     @include media($width-xs) {
@@ -336,6 +339,7 @@
     }
   }
   .work-for {
+    display: none;
     font-size: 0;
     padding: 15px 15px 20px 15px;
     box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
@@ -356,7 +360,7 @@
       @include media($width-mid) {
         margin-bottom: 38px;}
       @include media($width-max) {
-        width: 260px;
+        width: 230px;
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0px;
@@ -379,7 +383,7 @@
       }
       @include media($width-max) {
         height: 44px;
-        width: 155px;
+        width: 187px;
         padding-left: 20px;
       }
     }
@@ -389,7 +393,7 @@
       display: inline-block;
       vertical-align: middle;
       @include media($width-max){
-        width: 232px;
+        width: 230px;
         margin-right: 10px;
       }
     }
@@ -426,4 +430,11 @@
       }
     }
   }
+  .vacancies-show{
+    display: block;
+  }
+  .vacancies-show-inline{
+    display: inline-block;
+  }
 }
+
