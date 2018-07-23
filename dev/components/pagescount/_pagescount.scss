@@ -1,0 +1,89 @@
+.page-count{
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: $mainwhite;
+  font-family: $museo300, sans-serif;
+  color: $mainblack;
+  border-radius: 9px;
+  font-size: 16.28px;
+  padding: 13px 16px 16px 21px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+  @include media($width-xs){
+    border-radius: 9px;
+    font-size: 23.37px;
+    padding: 19px 23px 22px 26px;
+    margin-bottom: 31px;
+    margin-top: 18px;
+  }
+  @include media($width-mid){
+    border-radius: 9px;
+    font-size: 48px;
+    padding: 48px 49px 48px 49px;
+    margin-bottom: 40px;
+    margin-top: 37px;
+  }
+  @include media($width-max){
+    border-radius: 0 0 9px 9px;
+    font-size: 16.18px;
+    padding: 26px 16px 23px 45px;
+    margin-bottom: 0;
+    background-color: #fafafa;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+.page-number{
+  display: inline-block;
+  font-size: 16.28px;
+  @include media($width-xs){
+    font-size: 23.37px;
+  }
+  @include media($width-mid){
+    font-size: 48px;
+  }
+  @include media($width-max){
+    font-size: 19.58px;
+  }
+  span:first-child{
+    @include media($width-max){
+      display: none;
+    }
+  }
+}
+.page-number-item{
+  @include media($width-max){
+    margin-right: 13px;
+  }
+}
+.page-number-item-active{
+  color: #ff0101;
+}
+.page-number-box{
+  display: none;
+  @include media($width-max){
+    display: inline-block;
+  }
+}
+.page-next{
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  font-size: 14.2px;
+  @include media($width-xs){
+    font-size: 20.39px;
+  }
+  @include media($width-mid){
+    font-size: 41.68px;
+  }
+  @include media($width-max){
+    position: static;
+    font-size: 19.58px;
+    margin-left: -4px;
+  }
+}
+.page-next span{
+  color: $mainred;
+  font-weight: bold;
+}
